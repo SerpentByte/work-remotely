@@ -17,24 +17,32 @@ Verify password:  **************
 Wrote hashed password to /home/<user>/.jupyter/jupyter_notebook_config.json
 ```
 ### Step 2
-Once the password has been generated you can start with hosting the sever.<\br>
+Once the password has been generated you can start with hosting the sever.
+
 In the terminal, ssh into the host and navigate to the location where you would 
-want to open the notebook. Then type the following into the terminal<\br>
+want to open the notebook. Then type the following into the terminal
+
 ```$ jupyter notebook --no-browser --port=8889```
 
-This starts the server only with a broadcasting port of 8889 (default for local system is 8888)<\br>
+This starts the server only with a broadcasting port of 8889 (default for local system is 8888)
+
 __This terminal has to be kept open.__
 
 ### Step 3
-In a terminal on your guest, type<\br>
+In a terminal on your guest, type
+
 ```$ ssh -N -f -L localhost:8888:localhost:8889 <username>@<IP>```
-where username will be the username for host and IP is host's IP<\br>
-Example:<\br>
+where username will be the username for host and IP is host's IP
+
+Example:
+
 ssh -N -f -L localhost:8888:localhost:8889 user@192.168.0.1
 
 ### Step 4
-open your favourite browser and in the url type<\br>
-localhost:8888/<\br>
+open your favourite browser and in the url type
+
+localhost:8888/
+
 The notebook will as for the password setup in __step 1__, or whichever password you had setup earlier.
 On successfull login you will be able to see the homepage, but everything shown here is in the host device.
 
