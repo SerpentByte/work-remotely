@@ -32,6 +32,7 @@ __This terminal has to be kept open.__
 In a terminal on your guest, type
 
 ```$ ssh -N -f -L localhost:8888:localhost:8889 <username>@<IP>```
+
 where username will be the username for host and IP is host's IP
 
 Example:
