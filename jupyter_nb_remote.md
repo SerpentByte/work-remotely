@@ -10,7 +10,8 @@ guest   ---> device you are using right now (eg. the laptop you're using right n
 ### Step 1 (If you have not set up login using password)
 open a terminal on your guest device and ssh into your host device.
 Type the following command. Enter a new password. Verify by entering the same password.
-```$ jupyter notebook password
+```
+$ jupyter notebook password
 Enter password:   **************
 Verify password:  **************
 Wrote hashed password to /home/wasim/.jupyter/jupyter_notebook_config.json
@@ -18,13 +19,14 @@ Wrote hashed password to /home/wasim/.jupyter/jupyter_notebook_config.json
 ### Step 2
 Once the password has been generated you can start with hosting the sever.<\br>
 In the terminal, ssh into the host and navigate to the location where you would 
-want to open the notebook. Then type the following into the terminal
+want to open the notebook. Then type the following into the terminal<\br>
 ```$ jupyter notebook --no-browser --port=8889```
-This starts the server only with a broadcasting port of 8889 (default for local system is 8888)
+
+This starts the server only with a broadcasting port of 8889 (default for local system is 8888)<\br>
 __This terminal has to be kept open.__
 
 ### Step 3
-In a terminal on your guest, type
+In a terminal on your guest, type<\br>
 ```$ ssh -N -f -L localhost:8888:localhost:8889 <username>@<IP>```
 where username will be the username for host and IP is host's IP<\br>
 Example:<\br>
