@@ -14,7 +14,7 @@ Type the following command. Enter a new password. Verify by entering the same pa
 $ jupyter notebook password
 Enter password:   **************
 Verify password:  **************
-Wrote hashed password to /home/wasim/.jupyter/jupyter_notebook_config.json
+Wrote hashed password to /home/<user>/.jupyter/jupyter_notebook_config.json
 ```
 ### Step 2
 Once the password has been generated you can start with hosting the sever.<\br>
