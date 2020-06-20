@@ -37,7 +37,7 @@ where username will be the username for host and IP is host's IP
 
 Example:
 
-ssh -N -f -L localhost:8888:localhost:8889 user@192.168.0.1
+```$ ssh -N -f -L localhost:8888:localhost:8889 user@192.168.0.1```
 
 ### Step 4
 open your favourite browser and in the url type
