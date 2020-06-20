@@ -44,7 +44,7 @@ open your favourite browser and in the url type
 
 localhost:8888/
 
-The notebook will as for the password setup in __step 1__, or whichever password you had setup earlier.
+The notebook will ask for the password, setup in __step 1__, or whichever password you had setup earlier.
 On successfull login you will be able to see the homepage, but everything shown here is in the host device.
 
 
@@ -52,5 +52,5 @@ On successfull login you will be able to see the homepage, but everything shown 
 To check if you are really using the host's resources (RAM, CPU and HDD),
 create a file in the host where you have opened the notebook.
 Check if the jupyter tree is displaying it. Check if it is present in your guest.
-(Unless it is already there. In that create something you do not have on you guest)
+(Unless it is already there. In that create something you do not have on your guest system)
 
